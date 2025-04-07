@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <title>WO | nuestros servicios</title>
+
+    <!--importando tipografia-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!---->
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--Cabecera-->
+    <header class="cabecera">
+        <a href="index.html" class="logo" title="Logo">
+            <img src="assets/logo.png" alt="logo" title="Logo">
+        </a>
+        <nav class="nav">
+            <a href="index.html" title="Inicio">Inicio</a>
+            <a href="servicios.html" title="Servicios">Servicios</a>
+            <a href="contacto.html" title="Contacto">Contacto</a>
+            <a href="#" class="sesion" onclick="showLogin()">
+                <img class="login" src="assets/icono de perfil.png" alt="Iniciar sesion" title="Iniciar sesion">
+            </a>
+        </nav>
+    </header>
+
+    <main class="cuerpo">
+        <section class="servicios">
+            <h2>LO QUE SABEMOS HACER</h2>
+            <p>Resolvemos cualquier necesidad de comunicación de marca, generando ideas creativas para todos.</p>
+            <div class="gcontenedor">
+                <div class="gitem">
+                    <img src="assets/servicio1.png" alt="Servicio 1" title="Redes">
+                    <h3>MANEJO DE REDES SOCIALES</h3>
+                    <p>Llevamos tu marca a la cima del mundo digital. Implementamos estrategias personalizadas para aumentar tu presencia en las redes sociales, conectándote con tu público objetivo y generando engagement.</p>
+                    <a href="contacto.html" class="boton">MAS INFORMACION</a>
+                </div>
+                <div class="gitem">
+                    <img src="assets/servicio2.png" alt="Servicio 2" title="Diseñando">
+                    <h3>DESARROLLO Y DISEÑO DE MARCA</h3>
+                    <p>Creamos una identidad visual que represente la esencia de tu marca. Desde el diseño del logotipo hasta la creación de una guía de marca completa, te ayudamos a proyectar una imagen sólida y memorable.</p>
+                    <a href="contacto.html" class="boton">MAS INFORMACION</a>
+                </div>
+                <div class="gitem">
+                    <img src="assets/servicio3.png" alt="Servicio 3" title="Menus">
+                    <h3>MENÚS Y CATÁLOGO</h3>
+                    <p>Diseñamos menús y catálogos atractivos y funcionales que destaquen tus productos o servicios. Ayudamos a que tu propuesta sea irresistible para tus clientes.</p>
+                    <a href="contacto.html" class="boton">MAS INFORMACION</a>
+                </div>
+                <div class="gitem">
+                    <img src="assets/servicio4.png" alt="Servicio 4" title="Sitio web">
+                    <h3>CREACIÓN SITIOS WEB</h3>
+                    <p>Desarrollamos sitios web modernos y responsivos que se adaptan a cualquier dispositivo. Te brindamos herramientas para que tu negocio esté presente en línea y accesible a todos.</p>
+                    <a href="contacto.html" class="boton">MAS INFORMACION</a>
+                </div>
+                <div class="gitem">
+                    <img src="assets/servicio5.png" alt="Servicio 5" title="Fotografiando">
+                    <h3>FOTOGRAFÍA Y VIDEO</h3>
+                    <p>LCapturamos la esencia de tu marca a través de imágenes y videos de alta calidad. Te ayudamos a crear contenido visual atractivo que conecte con tu público.</p>
+                    <a href="contacto.html" class="boton">MAS INFORMACION</a>
+                </div>
+                <div class="gitem">
+                    <img src="assets/servicio6.png" alt="Servicio 6" title="Impresiones">
+                    <h3>IMPRESOS</h3>
+                    <p>Desde tarjetas de presentación hasta folletos y carteles, diseñamos materiales impresos que transmiten la imagen de tu marca con profesionalismo y creatividad.</p>
+                    <a href="contacto.html" class="boton">MAS INFORMACION</a>
+                </div>
+            </div>
+        </section>
+    </main>
+<!--Pie de pagina-->
+    <footer>
+        <div class="container">
+            <div class="section">
+                <h2>LA AGENCIA</h2>
+                <ul>
+                    <li>Acerca de nosotros</li>
+                    <li>Nuestro trabajo</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>SERVICIOS</h2>
+                <ul>
+                    <li>Manejo de redes sociales</li>
+                    <li>Desarrollo y diseño de marca</li>
+                    <li>Menus y catálogo</li>
+                    <li>Creación sitios web</li>
+                    <li>fotografía y video</li>
+                    <li>Impresos</li>
+                </ul>
+            </div>
+            <div class="section contact">
+                <h2>CONTÁCTANOS</h2>
+                <p>+591 72991923</p>
+                <p>wo.me encanta@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/adri_escalante_sanchez/" title="Instagram">
+                        <img src="assets/instagram.png" alt="Instagram"  title="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100093268479385" title="Facebook">
+                        <img src="assets/facebook.png" alt="Facebook" title="Facebook">
+                    </a>
+                    <a href="#" title="Whatsapp">
+                        <img src="assets/whats.png" alt="Whatsapp" title="Whatsapp">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Login and register-->
+
+    <div id="login-modal" class="cuadro oculto">
+        <div class="cuadro-contenido">
+            <span class="close" onclick="closeModals()">×</span>
+            <h2 id="modal-title">Iniciar Sesión</h2>
+            <div class="formulario">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com">
+            </div>
+            <div class="formulario">
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña">
+            </div>
+            <button class="boton" onclick="login()">Iniciar Sesión</button>
+            <p onclick="showRegister()">¿No tienes cuenta? Regístrate</p>
+        </div>
+    </div>
+    <div id="register-modal" class="cuadro oculto">
+        <div class="cuadro-contenido">
+            <span class="close" onclick="closeModals()">×</span>
+            <h2 id="modal-title">Registrarse</h2>
+            <div class="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+            </div>
+            <div class="formulario">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+            </div>
+            <div class="formulario">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com">
+            </div>
+            <div class="formulario">
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña">
+            </div>
+            <button class="boton" onclick="register()">Registrarse</button>
+            <p onclick="showLogin()">¿Ya tienes cuenta? Iniciar Sesión</p>
+        </div>
+    </div>
+
+    <script>
+        const loginModal = document.getElementById('login-modal');
+        const registerModal = document.getElementById('register-modal');
+        const body = document.body;
+
+        function showLogin() {
+            loginModal.classList.remove('oculto');
+            registerModal.classList.add('oculto');
+            body.classList.add('activar');
+        }
+
+        function showRegister() {
+            loginModal.classList.add('oculto');
+            registerModal.classList.remove('oculto');
+            body.classList.add('activar');
+        }
+
+        function closeModals() {
+            loginModal.classList.add('oculto');
+            registerModal.classList.add('oculto');
+            body.classList.remove('activar');
+        }
+    </script>
+
+
+
+</body>
+</html>

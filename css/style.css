@@ -1,0 +1,403 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins";
+}
+/* Cabecera */
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    min-height: 120px;
+    background:linear-gradient(to bottom,#c587eb, #8750eb);
+    padding: 0 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+}
+
+nav a {
+    font-weight: 600;
+    padding: 5px;
+    color: #fff;
+    transition: transform 0.7s ease, color 0.7s ease;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+}
+
+.logo {
+    margin-left: 30px;
+    display: flex;
+}
+
+.logo img{
+    height: 100px;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    transition: all 0.7s;
+}
+
+.sesion {
+    display: flex;
+    align-items: center;
+
+}
+
+.login {
+    height: 65px;
+}
+
+/*pie de pagina*/
+footer {
+    background-color: #f8f8f8;
+    padding: 50px 0; 
+}
+
+.container {
+    display: flex; 
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    text-align: left;
+}
+
+.section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #555;
+}
+
+.contact {
+    text-align: right;
+}
+
+.contact p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: block;
+    width: 30px;
+}
+
+.social-icons img {
+    width: 100%;
+    height: auto;
+}
+
+/*Cuadro*/
+
+.cuadro {
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: opacity 0.3s ease-in-out; 
+}
+
+.cuadro.oculto {
+    opacity: 0;
+    pointer-events: none; 
+}
+
+.cuadro-contenido {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.cuadro-contenido h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.formulario {
+    margin-bottom: 15px;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.activar {
+    overflow: hidden;
+}
+
+.close {
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #555;
+}
+.boton {
+    background-color: #8750eb;
+    color: #fff;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+
+}
+.boton:hover {
+    background-color: #c587eb;
+}
+
+/* PAGINA PRINCIPAL*/
+/*cuerpo*/
+
+.cuerpo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+.izquierda {
+    text-align: left;
+    width: 45%;
+}
+
+.cuerpo h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cuerpo p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.cuerpo button {
+    background-color: #8750eb;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.derecha {
+    width: 45%; 
+    text-align: center;
+}
+
+.derecha img {
+    max-width: 100%;
+    height: auto;
+}
+/**/
+
+/* SERVICIOS */
+
+.servicios {
+    text-align: center;
+}
+
+.gcontenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gitem {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gitem img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.gitem h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.gitem p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Contacto*/
+
+.contacto { 
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contenedor-formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-formulario img {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 100px;
+    height: auto;
+}
+
+.contenedor-formulario h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.formulario {
+    margin-bottom: 15px;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+
+.formulario textarea { 
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.formulario textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.formulario input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Para pantallas peque;as*/
+
+
+@media (max-width: 700px) {
+    .cabecera{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        text-align: center;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+    .cuerpo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .izquierda {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .derecha {
+        width: 100%;
+        text-align: center;
+    }
+    .gcontenedor {
+        grid-template-columns: 1fr;
+    }
+    .boton {
+        padding: 5px 3px; 
+        font-size: 12px; 
+    }
+
+    .contenedor-formulario {
+        max-width: 90%;
+    }
+
+    .contenedor-formulario img {
+        max-width: 80px;
+    }
+}
